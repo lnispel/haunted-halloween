@@ -43,6 +43,20 @@ function App() {
         <img className='candle' src={candle} />
       </div>
 
+      <div className="floating-ghost">
+        <div id="spooky">
+            <div id="body">
+                <div id="eyes"></div>
+                <div id="feet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div id="shadow"></div>
+      </div>
+
       <div className='red-carpet'/>
     </div>
   );
