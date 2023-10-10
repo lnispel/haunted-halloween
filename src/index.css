@@ -132,13 +132,13 @@ code {
   position: absolute;
   z-index: 2;
   left: 10vw;
-  bottom: 19vh;
+  bottom: 12vh;
 }
 
 .candle-flame-2 {
   position: absolute;
   right: 10vw;
-  bottom: 19vh;
+  bottom: 12vh;
   z-index: 2;
 }
 
