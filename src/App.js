@@ -19,7 +19,17 @@ function App() {
       <img className='fog-1' src={fog} />
       <img className='fog-2' src={fog} />
       <img className='tombstone' src={tombstone} />
-
+      <div className='links'>
+        <a href='https://drive.google.com/drive/folders/1QKPVe-czCKdQR5nBrtpibUC7cY848P8g?usp=drive_link'>
+          Red Carpet Photos
+        </a>
+        <a href='https://forms.gle/EceXK2K4e3gw9SX28'>
+          Voting Form
+        </a>
+        <a href='https://account.venmo.com/u/lukenis_monstr'>
+          Future Halloween Fund
+        </a>
+      </div>
       <div className='candle-flame-1'>
         <div className="glow"></div>
         <div className="flame"></div>
