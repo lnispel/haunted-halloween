@@ -41,7 +41,7 @@ code {
   -o-transform: scale(-1, -1);
   -webkit-transform: scale(-1, -1);
   transform: scale(-1, -1);
-  animation: fog-2-animation 30s ease-in-out;
+  animation: fog-2-animation 30s ease-out;
 }
 
 
@@ -49,14 +49,14 @@ code {
   position: absolute;
   opacity: 70%;
   top: 4vh;
-  animation: fog-1-animation 30s ease-in-out;
+  animation: fog-1-animation 30s ease-out;
  }
 
 .fog-1 {
  position: absolute;
  opacity: 50%;
  top: 40vh;
- animation: fog-1-animation 30s ease-in-out;
+ animation: fog-1-animation 30s ease-out;
 }
  
 .fog-2 {
@@ -68,7 +68,7 @@ code {
    -o-transform: scale(-1, -1);
    -webkit-transform: scale(-1, -1);
    transform: scale(-1, -1);
-   animation: fog-2-animation 30s ease-in-out;
+   animation: fog-2-animation 30s ease-out;
  }  
 
 .tombstone {
@@ -172,14 +172,14 @@ code {
 
 .candle {
   bottom: 0;
-  left: -22px;
+  left: -17px;
   margin: auto;
   pointer-events: none;
   position: absolute;
   right: 0;
   top: 25px;
   z-index: 2;
-  height: 3vh;
+  height: 20px;
 }
 
 .range {
