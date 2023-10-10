@@ -177,7 +177,7 @@ code {
   pointer-events: none;
   position: absolute;
   right: 0;
-  top: 20px;
+  top: 25px;
   z-index: 2;
   height: 3vh;
 }
