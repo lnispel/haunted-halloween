@@ -186,6 +186,10 @@ code {
   margin: 0 0 20px;
 } 
 
+#youtube-audio {
+  display: none;
+}
+
 @keyframes burnBabyBurn {
     /* Flame 1 */
     0% {
