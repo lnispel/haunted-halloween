@@ -21,15 +21,15 @@ function App() {
       <img className='tombstone' src={tombstone} />
 
       <div className='candle-flame-1'>
-        <div class="glow"></div>
-        <div class="flame"></div>
+        <div className="glow"></div>
+        <div className="flame"></div>
         <img className='candle' src={candle} />
       </div>
 
       
       <div className='candle-flame-2'>
-        <div class="glow"></div>
-        <div class="flame"></div>
+        <div className="glow"></div>
+        <div className="flame"></div>
         <img className='candle' src={candle} />
       </div>
 
