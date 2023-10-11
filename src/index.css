@@ -69,7 +69,21 @@ code {
    -webkit-transform: scale(-1, -1);
    transform: scale(-1, -1);
    animation: fog-2-animation 30s ease-out;
- }  
+ }
+ 
+ 
+ 
+.fog-3 {
+  position: absolute;
+  opacity: 30%;
+  left: -35px;
+  bottom: 32vh;
+  -moz-transform: scale(-1, -1);
+  -o-transform: scale(-1, -1);
+  -webkit-transform: scale(-1, -1);
+  transform: scale(-1, -1);
+  animation: fog-2-animation 30s ease-out;
+}  
 
 .tombstone {
   min-width: 130vw;
@@ -118,14 +132,60 @@ code {
 }
 
 .search-light-1  {
-  top: 0;
+  top: -8vh;
   right: -93px;
   left: 154px;
+  transform: rotate(0deg);
+  -webkit-animation:spin-2 60s linear infinite;
+  -moz-animation:spin-2 60s linear infinite;
+  animation:spin-2 60s linear infinite;
 }
 
 .search-light-2  {
-  top: -27vh;
+  top: -7vh;
   transform: rotate(319deg);
+  -webkit-animation:spin 60s linear infinite;
+  -moz-animation:spin 60s linear infinite;
+  animation:spin 60s linear infinite;
+}
+
+@-moz-keyframes spin { 
+  100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+  100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+  100% { 
+      -webkit-transform: rotate(360deg); 
+      transform:rotate(360deg); 
+  } 
+}
+
+
+
+@-moz-keyframes spin-2 { 
+  100% { -moz-transform: rotate(-60deg); } 
+}
+@-webkit-keyframes spin-2 { 
+  100% { -webkit-transform: rotate(-60deg); } 
+}
+@keyframes spin-2 { 
+  100% { 
+      -webkit-transform: rotate(-60deg); 
+      transform:rotate(-60deg); 
+  } 
+}
+
+.count-down {
+  position: absolute;
+  z-index: 4;
+  bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'countdown';
+  font-size: 25px;
+  color: rgb(222, 105, 27)
 }
 
 .candle-flame-1 {
@@ -203,7 +263,7 @@ code {
   color: 080085;
   font-family: 'tombstone';
   font-size: 20px;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 #youtube-audio {
@@ -252,8 +312,8 @@ code {
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
     transition: all 1s ease-in;
-    opacity: 80%;
-    border:3px #23A9C7 solid;
+    opacity: 70%;
+    border:3px #734949 solid;
     border-bottom: none;
 }
 
@@ -275,7 +335,7 @@ code {
     height: 5px;
     background: #45c2de;
     border-radius: 50%;
-    opacity: 70%;
+    opacity: 80%;
 }
 
 
@@ -295,12 +355,12 @@ code {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    border-bottom: 3px #23A9C7 solid;
+    border-bottom: 3px #734949 solid;
 }
 
 #shadow {
     margin: 0 10px 0;
-    background: #23A9C7;
+    background: #734949;
     width: 30px;
     height: 10px;
     border-radius: 50%;
@@ -311,7 +371,7 @@ code {
 .floating-ghost {
   position: absolute;
   z-index: 0;
-  bottom: 40vh;
+  bottom: 33vh;
   left: 2vw;
 }
 
@@ -344,3 +404,10 @@ code {
     font-family: 'poor-richard';
     src: local('poor-richard'), url(./fonts/poor-richard.ttf) format('truetype');
   }
+
+  
+  @font-face {
+    font-family: 'countdown';
+    src: local('countdown'), url(./fonts/countdown.ttf) format('truetype');
+  }
+
